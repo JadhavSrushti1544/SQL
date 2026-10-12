@@ -3,6 +3,15 @@
 
 SELECT * FROM my_table; -- Fetch All data
 
+/* THE BIG 6 */
+
+/*  SELECT: Choose Columns
+    FROM: Choose Tables
+    WHERE: Filter Rows
+    GROUP BY: Group Rows
+    HAVING: Filter Grouped Rows
+    ORDER BY: Sort Rows    */
+
 -- 1 & 2 view the table (SELECT, FROM)
 SELECT *              -- All
 FROM students;
@@ -29,4 +38,9 @@ FROM students
 GROUP BY grade_level
 ORDER BY grade_level;
 
--- 6. 
+-- 6. Show the grade levels with an avg gpa below 3.3 (HAVING)
+SELECT grade_level, AVG(gpa)  AS avg_gpa
+FROM students
+GROUP BY grade_level
+HAVING avg_gpa < 3.3
+ORDER BY grade_level;
