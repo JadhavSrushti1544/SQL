@@ -22,3 +22,11 @@ FROM students
 WHERE school_lunch = 'Yes' AND gpa > 3.3     -- Filter
 -- ORDER BY gpa;                                -- Sort
 ORDER BY gpa DESC;                           -- Sort DESC
+
+-- 5. Show the average gpa for each grade level (GROUP BY)
+SELECT grade_level, AVG(gpa) 
+FROM students
+GROUP BY grade_level
+ORDER BY grade_level;
+
+-- 6. 
