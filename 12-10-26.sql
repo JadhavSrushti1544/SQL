@@ -60,3 +60,16 @@ WHERE school_lunch = 'Yes' AND gpa > 3.3;
 SELECT DISTINCT gpa
 FROM students
 ORDER BY gpa DESC;
+
+-- 8. JOIN
+-- i) Show the final grades for each student:LEFT JOIN
+SELECT *
+FROM students;
+
+SELECT *
+FROM student_grades;
+
+SELECT student.id, students.student_name,
+    student_grades.class_name, student_grades.final_grade
+FROM students LEFT JOIN student_grades
+    ON students.id = student_grades.student_id;
