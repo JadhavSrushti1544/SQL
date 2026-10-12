@@ -51,3 +51,8 @@ SELECT student_name, gpa, school_lunch       -- select Column
 FROM students
 LIMIT 5;
 
+-- COUNT
+SELECT COUNT(*)      -- Counts no. of Rows
+FROM students
+WHERE school_lunch = 'Yes' AND gpa > 3.3; 
+
