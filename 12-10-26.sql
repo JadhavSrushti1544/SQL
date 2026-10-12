@@ -56,3 +56,7 @@ SELECT COUNT(*)      -- Counts no. of Rows
 FROM students
 WHERE school_lunch = 'Yes' AND gpa > 3.3; 
 
+-- DISTINCT - Returns Unique Values/ no repeat vaues
+SELECT DISTINCT gpa
+FROM students
+ORDER BY gpa DESC;
