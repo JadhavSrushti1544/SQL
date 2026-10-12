@@ -44,3 +44,10 @@ FROM students
 GROUP BY grade_level
 HAVING avg_gpa < 3.3
 ORDER BY grade_level;
+
+-- 7. Special Keywords: LIMIT | COUNT | DISTINCT
+-- LIMIT
+SELECT student_name, gpa, school_lunch       -- select Column
+FROM students
+LIMIT 5;
+
