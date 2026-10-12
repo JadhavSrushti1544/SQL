@@ -15,3 +15,10 @@ FROM students;
 SELECT student_name, gpa, school_lunch       -- select Column
 FROM students
 WHERE school_lunch = 'Yes' AND gpa > 3.3;    -- Filter
+
+-- 4. Sort the students by gpa (ORDER BY)
+SELECT student_name, gpa, school_lunch       -- select Column
+FROM students
+WHERE school_lunch = 'Yes' AND gpa > 3.3     -- Filter
+-- ORDER BY gpa;                                -- Sort
+ORDER BY gpa DESC;                           -- Sort DESC
